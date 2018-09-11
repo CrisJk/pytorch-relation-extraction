@@ -1,3 +1,10 @@
+
+2018.9.10 更新:
+- 参考OpenNRE使用mask可以快速计算piece wise pooling.
+    - 修改NYT 53类数据处理 (完成): 将dataset目录下的extract.cpp 替换原始数据extract_cpp目录下的extract.cpp
+    - 修改NYT 27类数据处理 (未完成)
+    
+
 使用Pytorch 复现 PCNN+MIL (Zeng 2015) 与 PCNN+ATT (Lin 2016), 以及两个模型在两个大小版本的数据集上(27类关系/53类关系)的表现对比。
 
 
@@ -125,6 +132,6 @@ python main_mil.py train --data="NYT"  --batch_size=128
 ## 参考
 
 - [PCNN+ONE Zeng 2015](https://github.com/smilelhh/ds_pcnns)
-- [PCNN+ATT Lin 2016](https://github.com/thunlp/NRE)
+- [PCNN+ATT Lin 2016](https://github.com/thunlp/OpenNRE)
 - [RE-DS-Word-Attention-Models](https://github.com/SharmisthaJat/RE-DS-Word-Attention-Models)
 - [GloRE](https://github.com/ppuliu/GloRE)
